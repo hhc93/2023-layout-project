@@ -148,7 +148,6 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-
 .container {
   max-width: 1920px;
   background: #1e1e1e;
@@ -165,7 +164,7 @@ a {
   padding: 20px 0;
 }
 .logo1 {
-  width: 25%;
+  width: 19%;
 }
 .logo1 img {
   display: block;
@@ -176,9 +175,12 @@ a {
 }
 .menu li {
   font-weight: 700;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
 }
-.title {
+.menu img {
+  display: none;
+}
+.title h2 {
   font-weight: 900;
   font-size: 120px;
   line-height: 120%;
@@ -186,6 +188,7 @@ a {
 }
 .banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 160px;
 }
@@ -203,6 +206,7 @@ a {
 }
 .service {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .service-title {
@@ -219,6 +223,7 @@ a {
 }
 .service-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 0 160px 0;
 }
@@ -241,6 +246,7 @@ a {
 }
 .comment {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 0 160px 0;
 }
@@ -300,7 +306,6 @@ a {
   background: #ffffff;
   border-radius: 100px;
   color: #020202;
-  /* margin: 0 auto; */
 }
 .tool-title {
   font-weight: 900;
@@ -311,7 +316,6 @@ a {
   background: #f2f2f2;
   border-radius: 16px;
   margin: 0 0 24px 0;
-  /* padding: 20px 0; */
   position: relative;
 }
 .search-bar input {
@@ -328,8 +332,8 @@ a {
 }
 .search-tag {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  /* text-align: center; */
 }
 .filter {
   border: 1px solid #f2f2f2;
@@ -344,7 +348,6 @@ a {
   top: 15px;
   right: 15px;
 }
-
 .search-menu {
   display: flex;
 }
@@ -374,14 +377,14 @@ a {
   right: 15px;
 }
 .tool-board {
-  /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .tool-card {
+  display: flex;
+  flex-direction: column;
   width: 32%;
-  /* margin: 0 auto; */
   border-radius: 10px;
   border: 1px solid #f2f2f2;
   margin-bottom: 24px;
@@ -394,10 +397,8 @@ a {
   vertical-align: middle;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  /* transform: scale(1.2);*/
-  transform: scale(1, 1);
+  /* transform: scale(1, 1); */
   transition: all 1s ease-out;
-  /* border-radius: 10px; */
 }
 .tool-img img:hover {
   transform: scale(1.2);
@@ -405,55 +406,8 @@ a {
 .tool-name {
   display: flex;
   justify-content: space-between;
-}
-.tool-class {
-  display: flex;
-  justify-content: space-between;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.tool-class p {
-  width: 100px;
-  padding: 20px;
-  margin-left: 12px;
-}
-.tool-class .largebox {
-  width: 120px;
-}
-.tool-class span {
-  width: 100px;
-  width: 18px;
-  color: #020202;
-  padding: 20px;
-  margin-right: 40px;
-}
-.tool-intro {
-  border-bottom: 1px solid #f2f2f2;
-  /* flex-grow: 2; */
-}
-.tool-intro .newline {
-  margin-bottom: 48px;
-}
-.tool-intro h2 {
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
-  padding: 6px;
-  margin: 14px 26px auto 26px;
-}
-.tool-intro p {
-  font-size: 14px;
-  line-height: 21px;
-  color: #525252;
-  padding: 6px;
-  margin: auto 14px 26px 26px;
-  /* flex-grow: 3; */
-}
-.tool-name {
   border-bottom: 1px solid #f2f2f2;
 }
-
 .tool-name h2 {
   font-weight: 700;
   padding: 20px;
@@ -465,41 +419,65 @@ a {
   padding: 20px;
   margin-left: 12px;
 }
+.tool-class {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.tool-class p {
+  width: 120px;
+  padding: 20px 0;
+  margin-left: 32px;
+}
+.tool-class span {
+  width: 100px;
+  width: 24px;
+  color: #020202;
+  padding: 20px;
+  margin-right: 40px;
+}
+.tool-intro {
+  border-bottom: 1px solid #f2f2f2;
+  flex-grow: 1;
+}
+.tool-intro h2 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  padding: 6px;
+  margin: 14px 26px 0 26px;
+}
+.tool-intro p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #525252;
+  padding: 6px;
+  margin: 0 26px 14px 26px;
+}
 .page {
   display: flex;
   justify-content: end;
   font-weight: 700;
   font-size: 14px;
-  padding: 40px 0 160px 0;
-}
-.page {
+  padding: 16px 0 160px 0;
   position: relative;
   display: flex;
 }
-/* .page span {
-  margin-right: 4px;
-  padding: 20px 20px;
-  border-radius: 16px;
-  
-} */
 .page a {
   display: block;
   padding: 20px 20px;
   border-radius: 16px;
-  /* padding: 20px 20px; */
   margin-right: 4px;
   color: #020202;
 }
-/* .arrorw:hover {
-  background: #ffffff;
-} */
 .page a:hover {
   background: #020202;
   color: #ffffff;
 }
 .page img {
   position: absolute;
-  top: 60px;
+  top: 35px;
   right: 10px;
 }
 .price {
@@ -510,12 +488,12 @@ a {
 .start-use {
   padding: 160px 0 40px 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-
 .start-use h2 {
   font-weight: 900;
   font-size: 48px;
@@ -545,7 +523,7 @@ a {
   padding: 80px 0;
 }
 .logo2 {
-  padding: 80px 0 0 0;
+  padding: 80px 0 240px 0;
   width: 15%;
 }
 .footer {
@@ -553,11 +531,11 @@ a {
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  font-size: 16px;
   padding: 32px 0;
 }
 .info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 50%;
 }
@@ -566,7 +544,6 @@ a {
 }
 .sns {
   display: flex;
-  /* justify-content: space-around; */
   width: 69%;
 }
 .sns li {
@@ -579,4 +556,80 @@ a {
 }
 .back-to-top p {
   padding-right: 12px;
+}
+@media (max-width: 767px) {
+  .logo1 {
+    width: 50%;
+  }
+  .menu img {
+    display: block;
+  }
+  .menu li {
+    display: none;
+  }
+  .banner h2 {
+    margin-left: 20%;
+  }
+  .title h2 {
+    width: 100%;
+  }
+  .service-title {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .service-intro {
+    width: 100%;
+  }
+  .service-content {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .comment-card {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .tool-title {
+    font-size: 60px;
+    text-align: center;
+  }
+  .filter {
+    order: 1;
+  }
+  .sort {
+    order: 2;
+  }
+  .search-menu {
+    order: 3;
+  }
+  .tool-card {
+    width: 100%;
+  }
+  .price {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .start-use {
+    width: 100%;
+  }
+  .start-use a {
+    position: relative;
+    width: 40%;
+  }
+  .start-use img {
+    position: absolute;
+    bottom: 20px;
+    left: 170px;
+  }
+  .logo2 {
+    margin-right: 20%;
+    width: 80%;
+  }
+  .copyright {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .back-to-top {
+    width: 50%;
+  }
 }
