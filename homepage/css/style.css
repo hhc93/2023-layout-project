@@ -132,9 +132,9 @@ table {
 *::after {
   box-sizing: border-box;
 }
-* {
+/* * {
   outline: 1px solid #ffffff;
-}
+} */
 img {
   max-width: 100%;
   height: auto;
