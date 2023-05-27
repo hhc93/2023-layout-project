@@ -132,9 +132,9 @@ table {
 *::after {
   box-sizing: border-box;
 }
-/* * {
-  outline: 1px solid #000;
-} */
+* {
+  outline: 1px solid #ffffff;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -215,11 +215,12 @@ a {
   font-size: 32px;
 }
 .service-intro {
-  width: 68%;
+  width: 66%;
   font-weight: 900;
   font-size: 48px;
   line-height: 120%;
   padding: 0 0 80px 0;
+  margin-left: 2%;
 }
 .service-list {
   display: flex;
@@ -244,6 +245,19 @@ a {
   line-height: 150%;
   padding: 0 40px 80px 40px;
 }
+.from-parnter {
+  font-weight: 900;
+  font-size: 32px;
+  padding: 0 0 80px 0;
+}
+.parnter-list1 {
+  display: flex;
+  padding: 0 20px;
+}
+.parnter-list2 {
+  display: flex;
+  padding: 20px 20px 160px 20px;
+}
 .comment {
   display: flex;
   flex-wrap: wrap;
@@ -262,11 +276,10 @@ a {
   flex-grow: 2;
 }
 .comment-content p {
-  padding: 0 0 10px 0;
   line-height: 150%;
 }
 .star {
-  padding: 40px 0 22px 40px;
+  padding: 40px 0 20px 40px;
 }
 .user {
   display: flex;
@@ -276,35 +289,22 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-weight: 700;
   padding: 0 0 0 16px;
 }
 .user-name h3 {
-  padding: 0 0 2px 0;
+  font-weight: 700;
 }
 .user-name p {
   text-align: left;
+  font-size: 14px;
 }
 .user-img img {
   vertical-align: middle;
 }
-.from-parnter {
-  font-weight: 900;
-  font-size: 32px;
-  padding: 0 0 80px 0;
-}
-.parnter-list1 {
-  display: flex;
-  padding: 0 20px 20px 20px;
-}
-.parnter-list2 {
-  display: flex;
-  padding: 20px 20px 160px 20px;
-}
 .container-white {
   width: 100%;
   background: #ffffff;
-  border-radius: 100px;
+  border-radius: 160px;
   color: #020202;
 }
 .tool-title {
@@ -313,8 +313,6 @@ a {
   padding: 160px 0 80px 0;
 }
 .search-bar {
-  background: #f2f2f2;
-  border-radius: 16px;
   margin: 0 0 24px 0;
   position: relative;
 }
@@ -322,7 +320,8 @@ a {
   outline-style: none;
   border-radius: 16px;
   border: 0px;
-  padding: 20px 0 20px 70px;
+  width: 100%;
+  padding: 20px 0 20px 76px;
   background: #f2f2f2;
 }
 .search-bar img {
@@ -338,7 +337,7 @@ a {
 .filter {
   border: 1px solid #f2f2f2;
   border-radius: 16px;
-  padding: 20px 40px;
+  padding: 20px 60px 20px 40px;
   display: flex;
   position: relative;
   margin-bottom: 40px;
@@ -346,7 +345,7 @@ a {
 .filter span {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 20px;
 }
 .search-menu {
   display: flex;
@@ -367,14 +366,14 @@ a {
   display: flex;
   border: 1px solid #f2f2f2;
   border-radius: 16px;
-  padding: 20px 40px;
+  padding: 20px 60px 20px 40px;
   margin-bottom: 40px;
   position: relative;
 }
 .sort span {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 20px;
 }
 .tool-board {
   display: flex;
@@ -385,7 +384,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 32%;
-  border-radius: 10px;
+  border-radius: 16px;
   border: 1px solid #f2f2f2;
   margin-bottom: 24px;
 }
@@ -486,7 +485,7 @@ a {
   border-top: 1px solid #ffffff;
 }
 .start-use {
-  padding: 160px 0 40px 0;
+  padding: 160px 0 80px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -504,17 +503,17 @@ a {
   display: block;
   border: 1px solid #ffffff;
   border-radius: 16px;
-  padding: 20px 40px;
+  padding: 20px 40px 20px 68px;
   width: 15%;
   font-weight: 900;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 160px;
+  margin-bottom: 80px;
 }
 .start-use img {
   position: absolute;
-  bottom: 220px;
-  left: 695px;
+  top: 270px;
+  left: 700px;
 }
 .homepage-price {
   line-height: 120%;
@@ -524,7 +523,7 @@ a {
 }
 .logo2 {
   padding: 80px 0 240px 0;
-  width: 15%;
+  width: 19%;
 }
 .footer {
   border-top: 1px solid #ffffff;
