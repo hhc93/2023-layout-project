@@ -132,9 +132,9 @@ table {
 *::after {
   box-sizing: border-box;
 }
-/* * {
+* {
   outline: 1px solid #ffffff;
-} */
+}
 img {
   max-width: 100%;
   height: auto;
@@ -215,8 +215,8 @@ nav .menu {
   margin-bottom: 160px;
 }
 @media (max-width: 767px) {
-  .banner h2 {
-    margin-left: 20%;
+  .span1 {
+    width: 100%;
   }
 }
 .botton a {
@@ -471,6 +471,7 @@ nav .menu {
   text-align: center;
   margin: 0 auto;
 }
+
 @media (max-width: 767px) {
   .tool-title {
     font-size: 32px;
@@ -725,7 +726,7 @@ nav .menu {
   }
   .start-use a {
     position: relative;
-    width: 40%;
+    width: 50%;
   }
   .start-use a::after {
     top: 21px;
