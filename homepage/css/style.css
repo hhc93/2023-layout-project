@@ -132,9 +132,9 @@ table {
 *::after {
   box-sizing: border-box;
 }
-/* * {
+* {
   outline: 1px solid #ffffff;
-} */
+}
 img {
   max-width: 100%;
   height: auto;
@@ -165,6 +165,9 @@ a {
 .header-logo img {
   display: block;
 }
+.header-logo img:hover {
+  transform: scale(1.2);
+}
 .menu {
   display: flex;
   align-items: center;
@@ -172,6 +175,10 @@ a {
 .menu li {
   font-weight: 700;
   padding: 0 0 0 20px;
+}
+.menu a:hover {
+  background: #ffffff;
+  color: #1e1e1e;
 }
 .menu img {
   display: none;
@@ -195,6 +202,10 @@ a {
   border: 1px solid #ffffff;
   border-radius: 16px;
   padding: 20px 40px;
+}
+.botton a:hover {
+  background: #ffffff;
+  color: #1e1e1e;
 }
 .span1 {
   display: flex;
@@ -392,7 +403,6 @@ a {
   vertical-align: middle;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  /* transform: scale(1, 1); */
   transition: all 1s ease-out;
 }
 .tool-img img:hover {
@@ -487,7 +497,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 .start-use h2 {
   font-weight: 900;
@@ -499,12 +509,27 @@ a {
   display: block;
   border: 1px solid #ffffff;
   border-radius: 16px;
-  padding: 20px 40px 20px 68px;
-  width: 15%;
+  padding: 20px 40px;
+  width: 188px;
   font-weight: 900;
   font-size: 20px;
   text-align: center;
   margin-bottom: 80px;
+  position: relative;
+}
+.start-use a:hover {
+  background: #ffffff;
+  color: #1e1e1e;
+}
+.start-use a::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 140px;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/call%20made.png");
+  background-size: cover;
 }
 .start-use img {
   position: absolute;
@@ -517,9 +542,16 @@ a {
   font-size: 80px;
   padding: 80px 0;
 }
+.homepage-price a:hover {
+  color: #020202;
+  background: #ffffff;
+}
 .footer-logo {
   padding: 80px 0 240px 0;
   width: 19%;
+}
+.footer-logo img:hover {
+  transform: scale(1.2);
 }
 .footer {
   border-top: 1px solid #ffffff;
@@ -544,6 +576,10 @@ a {
 .sns li {
   padding-right: 20px;
 }
+.sns a:hover {
+  background: #ffffff;
+  color: #1e1e1e;
+}
 .back-to-top {
   display: flex;
   justify-content: end;
@@ -551,6 +587,10 @@ a {
 }
 .back-to-top p {
   padding-right: 12px;
+}
+.back-to-top a:hover {
+  background: #ffffff;
+  color: #1e1e1e;
 }
 @media (max-width: 767px) {
   .header-logo {
@@ -610,6 +650,10 @@ a {
   .start-use a {
     position: relative;
     width: 40%;
+  }
+  .start-use a::after {
+    top: 21px;
+    left: 155px;
   }
   .start-use img {
     position: absolute;
