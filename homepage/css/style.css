@@ -243,12 +243,17 @@ nav .menu {
 .service-title {
   width: 32%;
   font-weight: 900;
+}
+.service-title h2 {
   font-size: 32px;
 }
 @media (max-width: 767px) {
   .service-title {
     width: 100%;
     margin-bottom: 24px;
+  }
+  .service-title h2 {
+    font-size: 20px;
   }
 }
 .service-intro {
@@ -262,6 +267,9 @@ nav .menu {
 @media (max-width: 767px) {
   .service-intro {
     width: 100%;
+  }
+  .service-title p {
+    font-size: 32px;
   }
 }
 .service-list {
@@ -455,11 +463,21 @@ nav .menu {
   color: #020202;
 }
 .tool-title {
-  font-weight: 900;
-  font-size: 80px;
   padding: 160px 0 80px 0;
 }
-
+.tool-title h2 {
+  font-weight: 900;
+  font-size: 80px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .tool-title {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 .search-bar {
   margin: 0 0 24px 0;
   position: relative;
@@ -718,6 +736,9 @@ nav .menu {
     bottom: 20px;
     left: 170px;
   }
+  .start-use h2 {
+    font-size: 32px;
+  }
 }
 .homepage-price {
   line-height: 120%;
@@ -728,6 +749,11 @@ nav .menu {
 .homepage-price a:hover {
   color: #020202;
   background: #ffffff;
+}
+@media (max-width: 767px) {
+  .homepage-price {
+    font-size: 48px;
+  }
 }
 .footer-logo {
   padding: 80px 0 240px 0;
