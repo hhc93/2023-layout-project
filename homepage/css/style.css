@@ -138,6 +138,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 body {
   background: #1e1e1e;
@@ -204,7 +205,7 @@ nav .menu {
 }
 @media (max-width: 767px) {
   .title h2 {
-    width: 100%;
+    font-size: 48px;
   }
 }
 .banner {
@@ -296,6 +297,18 @@ nav .menu {
   font-weight: 900;
   font-size: 32px;
   padding: 0 0 80px 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .mb-md-120 {
+    margin-bottom: 120px;
+  }
 }
 .enterprise {
   display: flex;
@@ -380,9 +393,6 @@ nav .menu {
 .mb-160 {
   margin-bottom: 160px;
 }
-.mt-20 {
-  margin-top: 20px;
-}
 .comment {
   display: flex;
   flex-wrap: wrap;
@@ -400,6 +410,12 @@ nav .menu {
   .comment-card {
     width: 100%;
     margin-bottom: 24px;
+  }
+  .c1 {
+    display: none;
+  }
+  .c2 {
+    display: none;
   }
 }
 .comment-content {
@@ -443,12 +459,7 @@ nav .menu {
   font-size: 80px;
   padding: 160px 0 80px 0;
 }
-@media (max-width: 767px) {
-  .tool-title {
-    font-size: 60px;
-    text-align: center;
-  }
-}
+
 .search-bar {
   margin: 0 0 24px 0;
   position: relative;
